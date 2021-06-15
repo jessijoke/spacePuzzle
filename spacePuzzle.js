@@ -300,16 +300,13 @@ if (reversed == null) { reversed = false; }
 	this.instance = new lib.Bitmap6();
 	this.instance.setTransform(-58,-56,0.051,0.051);
 
-	this.instance_1 = new lib.Bitmap3();
-	this.instance_1.setTransform(-54,-54,0.17,0.17);
-
-	var maskedShapeInstanceList = [this.instance,this.instance_1];
+	var maskedShapeInstanceList = [this.instance];
 
 	for(var shapedInstanceItr = 0; shapedInstanceItr < maskedShapeInstanceList.length; shapedInstanceItr++) {
 		maskedShapeInstanceList[shapedInstanceItr].mask = mask;
 	}
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_1},{t:this.instance}]}).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 	this._renderFirstFrame();
 
@@ -470,78 +467,78 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.instance = new lib.Sun();
-	this.instance.setTransform(-120.3,350.45,1,1.3737);
+	this.instance.setTransform(-150.35,307.45,1,1.3737);
 
 	this.planet7 = new lib.neptune();
 	this.planet7.name = "planet7";
-	this.planet7.setTransform(934.15,694.3,1.1125,1.1125);
+	this.planet7.setTransform(954.2,670.85,0.9825,0.9825,0,0,0,0.1,0.1);
 
 	this.planet6 = new lib.uranus();
 	this.planet6.name = "planet6";
-	this.planet6.setTransform(808.15,695.4,1.335,1.335);
+	this.planet6.setTransform(832.15,665.3,1.179,1.179,0,0,0,0.1,0);
 
 	this.planet5 = new lib.library();
 	this.planet5.name = "planet5";
-	this.planet5.setTransform(631.9,674.4,1.5575,1.5575);
+	this.planet5.setTransform(648.6,657.6,1.3755,1.3755,0,0,0,0.1,0.1);
 
 	this.planet4 = new lib.jumpiter();
 	this.planet4.name = "planet4";
-	this.planet4.setTransform(454.25,675.5,1.78,1.78);
+	this.planet4.setTransform(435.7,658.45,1.5721,1.5721);
 
 	this.planet3 = new lib.mars();
 	this.planet3.name = "planet3";
-	this.planet3.setTransform(325.25,695.8,0.445,0.445,0,0,0,0,0.1);
+	this.planet3.setTransform(319.65,672.15,0.393,0.393,0,0,0,0.1,0.4);
 
 	this.planet2 = new lib.earth();
 	this.planet2.name = "planet2";
-	this.planet2.setTransform(257.1,704.35,0.89,0.89);
+	this.planet2.setTransform(238,675.45,0.786,0.786,0,0,0,0.1,0.1);
 
 	this.planet1 = new lib.venus();
 	this.planet1.name = "planet1";
-	this.planet1.setTransform(180.35,707.3,0.623,0.623,0,0,0,0.1,0);
+	this.planet1.setTransform(142.2,673.65,0.5502,0.5502,0,0,0,0.2,0);
 
 	this.planet0 = new lib.mercury();
 	this.planet0.name = "planet0";
-	this.planet0.setTransform(122.35,710,0.445,0.445,0,0,0,0.1,0);
+	this.planet0.setTransform(52.3,678.2,0.393,0.393,0,0,0,0.2,0.1);
 
 	this.slot7 = new lib.planetshadow();
 	this.slot7.name = "slot7";
-	this.slot7.setTransform(953.95,384,1.1125,1.1125);
+	this.slot7.setTransform(950.2,315.1,0.9825,0.9825,0,0,0,0.1,0.1);
 
 	this.slot6 = new lib.planetshadow();
 	this.slot6.name = "slot6";
-	this.slot6.setTransform(818.85,384,1.335,1.335);
+	this.slot6.setTransform(809.35,315.1,1.179,1.179,0,0,0,0.1,0.1);
 
 	this.slot5 = new lib.planetshadow();
 	this.slot5.name = "slot5";
-	this.slot5.setTransform(675.85,384,1.5575,1.5575);
+	this.slot5.setTransform(646.45,315,1.3755,1.3755);
 
 	this.slot4 = new lib.planetshadow();
 	this.slot4.name = "slot4";
-	this.slot4.setTransform(504.95,384,1.78,1.78);
+	this.slot4.setTransform(467.55,315,1.5721,1.5721);
 
 	this.slot3 = new lib.planetshadow();
 	this.slot3.name = "slot3";
-	this.slot3.setTransform(389.85,384.1,0.445,0.445,0,0,0,0,0.2);
+	this.slot3.setTransform(365.95,315.1,0.393,0.393,0,0,0,0.1,0.2);
 
 	this.slot2 = new lib.planetshadow();
 	this.slot2.name = "slot2";
-	this.slot2.setTransform(304.55,384,0.89,0.89);
+	this.slot2.setTransform(290.65,315.1,0.786,0.786,0,0,0,0.1,0.1);
 
 	this.slot1 = new lib.planetshadow();
 	this.slot1.name = "slot1";
-	this.slot1.setTransform(203.25,384.05,0.623,0.623,0,0,0,0,0.1);
+	this.slot1.setTransform(201.15,315.1,0.5502,0.5502,0,0,0,0.1,0.2);
 
 	this.slot0 = new lib.planetshadow();
 	this.slot0.name = "slot0";
-	this.slot0.setTransform(140,384.1,0.445,0.445,0,0,0,0,0.2);
+	this.slot0.setTransform(108.6,315.1,0.393,0.393,0,0,0,0.1,0.2);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.slot0},{t:this.slot1},{t:this.slot2},{t:this.slot3},{t:this.slot4},{t:this.slot5},{t:this.slot6},{t:this.slot7},{t:this.planet0},{t:this.planet1},{t:this.planet2},{t:this.planet3},{t:this.planet4},{t:this.planet5},{t:this.planet6},{t:this.planet7},{t:this.instance}]}).wait(2));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(177.6,440.4,826.1999999999999,333.70000000000005);
+p.nominalBounds = new cjs.Rectangle(147.6,397.4,864.3,347.4);
 // library properties:
 lib.properties = {
 	id: '4EB8562230474DF7931D6BD9BC61EB1A',
@@ -551,10 +548,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Bitmap6.png", id:"Bitmap6"},
-		{src:"images/Bitmap8.png", id:"Bitmap8"},
-		{src:"images/spacePuzzle_atlas_1.png", id:"spacePuzzle_atlas_1"},
-		{src:"images/spacePuzzle_atlas_2.png", id:"spacePuzzle_atlas_2"}
+		{src:"images/Bitmap6.png?1623723020704", id:"Bitmap6"},
+		{src:"images/Bitmap8.png?1623723020704", id:"Bitmap8"},
+		{src:"images/spacePuzzle_atlas_1.png?1623723020562", id:"spacePuzzle_atlas_1"},
+		{src:"images/spacePuzzle_atlas_2.png?1623723020562", id:"spacePuzzle_atlas_2"}
 	],
 	preloads: []
 };
