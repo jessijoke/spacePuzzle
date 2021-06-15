@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"spacePuzzle_atlas_1", frames: [[942,0,650,650],[942,652,636,636],[802,1290,636,636],[0,942,800,533],[0,1477,640,350],[0,0,940,940]]},
+		{name:"spacePuzzle_atlas_1", frames: [[1594,535,384,105],[1594,749,332,105],[1594,963,307,105],[1594,856,322,105],[638,1049,229,105],[638,942,250,105],[1594,1070,291,105],[1594,642,374,105],[942,535,650,650],[0,942,636,636],[638,1187,636,636],[942,0,800,533],[1276,1187,640,350],[0,0,940,940]]},
 		{name:"spacePuzzle_atlas_2", frames: [[0,0,1720,1720]]}
 ];
 
@@ -27,37 +27,99 @@ lib.ssMetadata = [
 
 
 
-(lib.Bitmap10 = function() {
+(lib.CachedBmp_9 = function() {
 	this.initialize(ss["spacePuzzle_atlas_1"]);
 	this.gotoAndStop(0);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap11 = function() {
+(lib.CachedBmp_8 = function() {
 	this.initialize(ss["spacePuzzle_atlas_1"]);
 	this.gotoAndStop(1);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap3 = function() {
+(lib.CachedBmp_7 = function() {
 	this.initialize(ss["spacePuzzle_atlas_1"]);
 	this.gotoAndStop(2);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap4 = function() {
+(lib.CachedBmp_6 = function() {
 	this.initialize(ss["spacePuzzle_atlas_1"]);
 	this.gotoAndStop(3);
 }).prototype = p = new cjs.Sprite();
 
 
 
-(lib.Bitmap5 = function() {
+(lib.CachedBmp_5 = function() {
 	this.initialize(ss["spacePuzzle_atlas_1"]);
 	this.gotoAndStop(4);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_4 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(5);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_3 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(6);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_2 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(7);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.CachedBmp_1 = function() {
+	this.initialize(img.CachedBmp_1);
+}).prototype = p = new cjs.Bitmap();
+p.nominalBounds = new cjs.Rectangle(0,0,2639,661);
+
+
+(lib.Bitmap10 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(8);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap11 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(9);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap3 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(10);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap4 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(11);
+}).prototype = p = new cjs.Sprite();
+
+
+
+(lib.Bitmap5 = function() {
+	this.initialize(ss["spacePuzzle_atlas_1"]);
+	this.gotoAndStop(12);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -70,7 +132,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,2205,2205);
 
 (lib.Bitmap7 = function() {
 	this.initialize(ss["spacePuzzle_atlas_1"]);
-	this.gotoAndStop(5);
+	this.gotoAndStop(13);
 }).prototype = p = new cjs.Sprite();
 
 
@@ -170,28 +232,6 @@ if (reversed == null) { reversed = false; }
 }).prototype = getMCSymbolPrototype(lib.uranus, new cjs.Rectangle(-44.7,-44.7,89.5,89.5), null);
 
 
-(lib.Sun = function(mode,startPosition,loop,reversed) {
-if (loop == null) { loop = true; }
-if (reversed == null) { reversed = false; }
-	var props = new Object();
-	props.mode = mode;
-	props.startPosition = startPosition;
-	props.labels = {};
-	props.loop = loop;
-	props.reversed = reversed;
-	cjs.MovieClip.apply(this,[props]);
-
-	// Layer_1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FFFF00").s().p("A3pXqQpyp0AAt2QAAt2JypzQJzpyN2AAQN2AAJ0JyQJyJzAAN2QAAN2pyJ0Qp0Jyt2AAQt2AApzpyg");
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
-
-	this._renderFirstFrame();
-
-}).prototype = getMCSymbolPrototype(lib.Sun, new cjs.Rectangle(-214,-214,428.1,428.1), null);
-
-
 (lib.planetshadow = function(mode,startPosition,loop,reversed) {
 if (loop == null) { loop = true; }
 if (reversed == null) { reversed = false; }
@@ -205,7 +245,7 @@ if (reversed == null) { reversed = false; }
 
 	// Layer_1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#6D5C70").s().p("Ak8E9QiCiDAAi6QAAi5CCiDQCDiCC5AAQC6AACDCCQCCCDAAC5QAAC6iCCDQiDCCi6AAQi5AAiDiCg");
+	this.shape.graphics.rf(["#6D5C70","#291D2B"],[0,1],0,-1.3,0,0,-1.3,46.8).s().p("Ak8E9QiCiDAAi6QAAi5CCiDQCDiCC5AAQC6AACDCCQCCCDAAC5QAAC6iCCDQiDCCi6AAQi5AAiDiCg");
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
@@ -466,79 +506,103 @@ if (reversed == null) { reversed = false; }
 	this.timeline.addTween(cjs.Tween.get(this).wait(1).call(this.frame_1).wait(1));
 
 	// Layer_1
-	this.instance = new lib.Sun();
-	this.instance.setTransform(-150.35,307.45,1,1.3737);
+	this.instance = new lib.CachedBmp_9();
+	this.instance.setTransform(859.95,350.55,0.3333,0.3333);
+
+	this.instance_1 = new lib.CachedBmp_8();
+	this.instance_1.setTransform(734.3,89.65,0.3333,0.3333);
+
+	this.instance_2 = new lib.CachedBmp_7();
+	this.instance_2.setTransform(575.7,350.55,0.3333,0.3333);
+
+	this.instance_3 = new lib.CachedBmp_6();
+	this.instance_3.setTransform(403.3,89.65,0.3333,0.3333);
+
+	this.instance_4 = new lib.CachedBmp_5();
+	this.instance_4.setTransform(294.2,336.6,0.3333,0.3333);
+
+	this.instance_5 = new lib.CachedBmp_4();
+	this.instance_5.setTransform(195.2,107.3,0.3333,0.3333);
+
+	this.instance_6 = new lib.CachedBmp_3();
+	this.instance_6.setTransform(91.35,336.6,0.3333,0.3333);
+
+	this.instance_7 = new lib.CachedBmp_2();
+	this.instance_7.setTransform(10.45,142.3,0.3333,0.3333);
 
 	this.planet7 = new lib.neptune();
 	this.planet7.name = "planet7";
-	this.planet7.setTransform(954.2,670.85,0.9825,0.9825,0,0,0,0.1,0.1);
+	this.planet7.setTransform(954.2,608.6,0.9825,0.9825,0,0,0,0.1,0.1);
 
 	this.planet6 = new lib.uranus();
 	this.planet6.name = "planet6";
-	this.planet6.setTransform(832.15,665.3,1.179,1.179,0,0,0,0.1,0);
+	this.planet6.setTransform(832.15,603.05,1.179,1.179,0,0,0,0.1,0);
 
 	this.planet5 = new lib.library();
 	this.planet5.name = "planet5";
-	this.planet5.setTransform(648.6,657.6,1.3755,1.3755,0,0,0,0.1,0.1);
+	this.planet5.setTransform(648.6,595.35,1.3755,1.3755,0,0,0,0.1,0.1);
 
 	this.planet4 = new lib.jumpiter();
 	this.planet4.name = "planet4";
-	this.planet4.setTransform(435.7,658.45,1.5721,1.5721);
+	this.planet4.setTransform(435.7,596.2,1.5721,1.5721);
 
 	this.planet3 = new lib.mars();
 	this.planet3.name = "planet3";
-	this.planet3.setTransform(319.65,672.15,0.393,0.393,0,0,0,0.1,0.4);
+	this.planet3.setTransform(319.65,609.9,0.393,0.393,0,0,0,0.1,0.4);
 
 	this.planet2 = new lib.earth();
 	this.planet2.name = "planet2";
-	this.planet2.setTransform(238,675.45,0.786,0.786,0,0,0,0.1,0.1);
+	this.planet2.setTransform(238,613.2,0.786,0.786,0,0,0,0.1,0.1);
 
 	this.planet1 = new lib.venus();
 	this.planet1.name = "planet1";
-	this.planet1.setTransform(142.2,673.65,0.5502,0.5502,0,0,0,0.2,0);
+	this.planet1.setTransform(142.2,611.4,0.5502,0.5502,0,0,0,0.2,0);
 
 	this.planet0 = new lib.mercury();
 	this.planet0.name = "planet0";
-	this.planet0.setTransform(52.3,678.2,0.393,0.393,0,0,0,0.2,0.1);
+	this.planet0.setTransform(52.3,615.95,0.393,0.393,0,0,0,0.2,0.1);
 
 	this.slot7 = new lib.planetshadow();
 	this.slot7.name = "slot7";
-	this.slot7.setTransform(950.2,315.1,0.9825,0.9825,0,0,0,0.1,0.1);
+	this.slot7.setTransform(929.05,258.85,0.9825,0.9825,0,0,0,0.1,0.1);
 
 	this.slot6 = new lib.planetshadow();
 	this.slot6.name = "slot6";
-	this.slot6.setTransform(809.35,315.1,1.179,1.179,0,0,0,0.1,0.1);
+	this.slot6.setTransform(790.75,253.85,1.179,1.179,0,0,0,0.1,0.1);
 
 	this.slot5 = new lib.planetshadow();
 	this.slot5.name = "slot5";
-	this.slot5.setTransform(646.45,315,1.3755,1.3755);
+	this.slot5.setTransform(634.75,254.75,1.3755,1.3755);
 
 	this.slot4 = new lib.planetshadow();
 	this.slot4.name = "slot4";
-	this.slot4.setTransform(467.55,315,1.5721,1.5721);
+	this.slot4.setTransform(461.25,255.75,1.5721,1.5721);
 
 	this.slot3 = new lib.planetshadow();
 	this.slot3.name = "slot3";
-	this.slot3.setTransform(365.95,315.1,0.393,0.393,0,0,0,0.1,0.2);
+	this.slot3.setTransform(331.75,256.85,0.393,0.393,0,0,0,0.1,0.2);
 
 	this.slot2 = new lib.planetshadow();
 	this.slot2.name = "slot2";
-	this.slot2.setTransform(290.65,315.1,0.786,0.786,0,0,0,0.1,0.1);
+	this.slot2.setTransform(237.45,257.85,0.786,0.786,0,0,0,0.1,0.1);
 
 	this.slot1 = new lib.planetshadow();
 	this.slot1.name = "slot1";
-	this.slot1.setTransform(201.15,315.1,0.5502,0.5502,0,0,0,0.1,0.2);
+	this.slot1.setTransform(136.05,259.85,0.5502,0.5502,0,0,0,0.1,0.2);
 
 	this.slot0 = new lib.planetshadow();
 	this.slot0.name = "slot0";
-	this.slot0.setTransform(108.6,315.1,0.393,0.393,0,0,0,0.1,0.2);
+	this.slot0.setTransform(52.25,252.85,0.393,0.393,0,0,0,0.1,0.2);
 
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.slot0},{t:this.slot1},{t:this.slot2},{t:this.slot3},{t:this.slot4},{t:this.slot5},{t:this.slot6},{t:this.slot7},{t:this.planet0},{t:this.planet1},{t:this.planet2},{t:this.planet3},{t:this.planet4},{t:this.planet5},{t:this.planet6},{t:this.planet7},{t:this.instance}]}).wait(2));
+	this.instance_8 = new lib.CachedBmp_1();
+	this.instance_8.setTransform(50.7,128.85,0.3333,0.3333);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.instance_8},{t:this.slot0},{t:this.slot1},{t:this.slot2},{t:this.slot3},{t:this.slot4},{t:this.slot5},{t:this.slot6},{t:this.slot7},{t:this.planet0},{t:this.planet1},{t:this.planet2},{t:this.planet3},{t:this.planet4},{t:this.planet5},{t:this.planet6},{t:this.planet7},{t:this.instance_7},{t:this.instance_6},{t:this.instance_5},{t:this.instance_4},{t:this.instance_3},{t:this.instance_2},{t:this.instance_1},{t:this.instance}]}).wait(2));
 
 	this._renderFirstFrame();
 
 }).prototype = p = new lib.AnMovieClip();
-p.nominalBounds = new cjs.Rectangle(147.6,397.4,864.3,347.4);
+p.nominalBounds = new cjs.Rectangle(522.5,473.7,489.4,208.90000000000003);
 // library properties:
 lib.properties = {
 	id: '4EB8562230474DF7931D6BD9BC61EB1A',
@@ -548,10 +612,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Bitmap6.png?1623723377966", id:"Bitmap6"},
-		{src:"images/Bitmap8.png?1623723377966", id:"Bitmap8"},
-		{src:"images/spacePuzzle_atlas_1.png?1623723377899", id:"spacePuzzle_atlas_1"},
-		{src:"images/spacePuzzle_atlas_2.png?1623723377899", id:"spacePuzzle_atlas_2"}
+		{src:"images/CachedBmp_1.png?1623724107583", id:"CachedBmp_1"},
+		{src:"images/Bitmap6.png?1623724107583", id:"Bitmap6"},
+		{src:"images/Bitmap8.png?1623724107583", id:"Bitmap8"},
+		{src:"images/spacePuzzle_atlas_1.png?1623724107540", id:"spacePuzzle_atlas_1"},
+		{src:"images/spacePuzzle_atlas_2.png?1623724107540", id:"spacePuzzle_atlas_2"}
 	],
 	preloads: []
 };
