@@ -551,10 +551,10 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/Bitmap6.png?1623720266268", id:"Bitmap6"},
-		{src:"images/Bitmap8.png?1623720266268", id:"Bitmap8"},
-		{src:"images/spacePuzzle_atlas_1.png?1623720266223", id:"spacePuzzle_atlas_1"},
-		{src:"images/spacePuzzle_atlas_2.png?1623720266223", id:"spacePuzzle_atlas_2"}
+		{src:"images/Bitmap6.png", id:"Bitmap6"},
+		{src:"images/Bitmap8.png", id:"Bitmap8"},
+		{src:"images/spacePuzzle_atlas_1.png", id:"spacePuzzle_atlas_1"},
+		{src:"images/spacePuzzle_atlas_2.png", id:"spacePuzzle_atlas_2"}
 	],
 	preloads: []
 };
