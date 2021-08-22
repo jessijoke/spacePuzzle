@@ -1,4 +1,4 @@
-![Preview of the Air & Space Museum Website](air-space-museum-readme.png?raw=true "Air & Space Museum Website Preview")
+![Preview of the Air & Space Museum Website](puzzle-game-screenshot.png?raw=true "Air & Space Museum Website Preview")
 
 ## Air & Space Museum PUZZLE GAME
 
