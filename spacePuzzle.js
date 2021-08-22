@@ -612,11 +612,11 @@ lib.properties = {
 	color: "#FFFFFF",
 	opacity: 0.00,
 	manifest: [
-		{src:"images/CachedBmp_1.png?1623724457341", id:"CachedBmp_1"},
-		{src:"images/Bitmap6.png?1623724457341", id:"Bitmap6"},
-		{src:"images/Bitmap8.png?1623724457341", id:"Bitmap8"},
-		{src:"images/spacePuzzle_atlas_1.png?1623724457268", id:"spacePuzzle_atlas_1"},
-		{src:"images/spacePuzzle_atlas_2.png?1623724457268", id:"spacePuzzle_atlas_2"}
+		{src:"images/CachedBmp_1.png?1623725097184", id:"CachedBmp_1"},
+		{src:"images/Bitmap6.png?1623725097184", id:"Bitmap6"},
+		{src:"images/Bitmap8.png?1623725097184", id:"Bitmap8"},
+		{src:"images/spacePuzzle_atlas_1.png?1623725097144", id:"spacePuzzle_atlas_1"},
+		{src:"images/spacePuzzle_atlas_2.png?1623725097144", id:"spacePuzzle_atlas_2"}
 	],
 	preloads: []
 };
